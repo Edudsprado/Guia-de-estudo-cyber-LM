@@ -2,6 +2,12 @@
 
 > Projeto desenvolvido como parte do desafio **"Treinando uma IA de Aprendizagem: Explore o Poder do NotebookLM"** da DIO (Digital Innovation One).
 
+![DIO](https://img.shields.io/badge/DIO-Project-blue)
+![NotebookLM](https://img.shields.io/badge/NotebookLM-Google-orange)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Learning-green)
+![Markdown](https://img.shields.io/badge/Markdown-README-black)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+
 ## 📖 Sobre o Projeto
 
 Este projeto tem como objetivo explorar o uso do **NotebookLM** como ferramenta de aprendizagem ativa na área de **Cibersegurança**. Em vez de utilizar a Inteligência Artificial apenas para gerar respostas prontas, a proposta foi construir um processo estruturado de estudo, utilizando fontes oficiais, engenharia de prompts e documentação do aprendizado.
