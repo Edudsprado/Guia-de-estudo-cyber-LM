@@ -15,6 +15,9 @@ Este projeto tem como objetivo explorar o uso do **NotebookLM** como ferramenta 
 O tema escolhido foi **Fundamentos de Cibersegurança para Laboratórios Práticos**, por ser uma área de grande relevância para profissionais de Tecnologia da Informação e por fornecer uma base sólida para estudos futuros em segurança ofensiva, segurança defensiva e infraestrutura.
 
 ---
+<p align="center">
+  <img src="imagens/notebooklm-overview.png" width="850">
+</p>
 
 ## 📑 Índice
 
