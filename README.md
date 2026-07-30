@@ -87,19 +87,181 @@ Durante o desenvolvimento do projeto foram realizados diversos testes para compr
 
 ### Prompt Inicial
 
-> Explique o que é um firewall.
+> Com base exclusivamente nas fontes carregadas, faça um resumo estruturado dos principais fundamentos de cibersegurança necessários para compreender e montar laboratórios práticos..
 
 ### Resultado
 
-Resposta correta, porém bastante genérica.
+Para compreender e montar laboratórios práticos de cibersegurança eficazes, é essencial dominar os fundamentos que abrangem desde a governança estratégica até a análise técnica profunda de redes e aplicações. Com base nas fontes fornecidas, os principais pilares são:
+1. Governança e Gestão de Riscos (NIST CSF 2.0)
+O ponto de partida para qualquer ambiente de segurança é o entendimento e a melhoria da gestão de riscos
+.
+Ações Práticas: O framework traduz objetivos de alto nível em ações para mitigar riscos, como eventos de ransomware
+.
+Conformidade e Automação: É necessário alinhar configurações de produtos de TI com resultados do framework para permitir relatórios e automação baseados em evidências
+.
+2. Exploração de Redes e Inventário (Nmap)
+Antes de proteger ou testar um ambiente, deve-se realizar a exploração de rede e auditoria de segurança
+.
+Descoberta de Hosts e Serviços: Identificar quais hosts estão ativos, quais serviços (aplicação e versão) eles oferecem e quais sistemas operacionais estão executando
+.
+Estados de Porta: Compreender a "tabela de portas interessantes" e seus estados: open (aplicação escutando), closed (sem aplicação), filtered (bloqueada por firewall/filtro) ou unfiltered (o Nmap não consegue determinar o estado)
+.
+Auditoria: Utilizar pacotes IP em estado bruto para determinar o inventário de rede e a disponibilidade do serviço
+.
+3. Análise de Tráfego e Protocolos (Wireshark)
+A análise detalhada do tráfego permite "medir" o que acontece dentro dos cabos de rede
+.
+Captura e Inspeção: Realizar capturas ao vivo em diversos meios (Ethernet, Wi-Fi, Bluetooth) e inspecionar o conteúdo dos pacotes com dissecação profunda de protocolos
+.
+Diagnóstico de Anomalias: Utilizar o Expert Info para identificar automaticamente comportamentos incomuns ou problemas de rede, classificados por severidade (Chat, Note, Warn, Error)
+.
+Análise de Fluxo (TCP): Rastrear o estado de sessões TCP para detectar problemas como retransmissões, perdas de pacotes ou janelas cheias (ZeroWindow)
+.
+Remontagem de Dados: Compreender como protocolos de nível superior (como HTTP) dividem dados em múltiplos pacotes e como o Wireshark os remonta para análise do conteúdo original
+.
+4. Segurança de Aplicações Web (OWASP)
+O foco na camada de aplicação é vital, dado que as vulnerabilidades web são vetores críticos.
+Riscos Críticos: O padrão de referência é o OWASP Top 10, que lista os riscos de segurança mais críticos para aplicações web e serve como guia para o desenvolvimento de código seguro
+.
+Metodologia de Teste: O Web Security Testing Guide (WSTG) fornece uma estrutura abrangente de melhores práticas utilizadas por testadores de invasão e organizações em todo o mundo para validar a segurança de serviços web
+.
+5. Configuração e Ferramental de Laboratório
+Para a montagem prática, as fontes destacam requisitos técnicos:
+Privilégios: O acesso root ou administrador é frequentemente necessário para capturas de pacotes e varreduras brutas
+.
+Ambiente de Captura: Escolher a interface correta e estar no "lugar certo" da rede para visualizar o tráfego desejado
+.
+Tratamento de Dados: Em laboratórios colaborativos, é importante sanitizar capturas (ex: com TraceWrangler) para não expor informações sensíveis ou PII (Informações de Identificação Pessoal).
 
 ### Problema
 
-Pouco contexto e ausência de comparação com outras tecnologias.
+Nenhum aparente, além de um resposta genérica e rápida.
 
 ### Prompt Refinado
 
-> Com base exclusivamente nas fontes carregadas, compare Firewall, IDS e IPS, destacando diferenças, vantagens, limitações e exemplos de utilização em laboratórios de cibersegurança.
+> Atue como um analista especialista em Cibersegurança e pesquisador acadêmico, utilizando exclusivamente as fontes carregadas neste NotebookLM.
+
+Sua tarefa é analisar e comparar como diferentes documentos abordam os conceitos fundamentais de segurança da informação:
+
+Ameaça (Threat)
+Vulnerabilidade (Vulnerability)
+Risco (Risk)
+Ataque (Attack)
+
+O objetivo é criar um material de estudo estruturado para um Caderno Temático de Cibersegurança, destacando diferenças de interpretação, pontos em comum e aplicações práticas.
+
+Instruções de Análise
+
+Para cada conceito, identifique nas fontes:
+
+A definição apresentada.
+Como o conceito é explicado.
+Quais características principais são destacadas.
+Quais exemplos práticos aparecem.
+Como o conceito se relaciona com os demais elementos da segurança da informação.
+Comparação Entre as Fontes
+
+Crie uma análise comparativa mostrando:
+
+Semelhanças
+
+Identifique:
+
+definições semelhantes;
+ideias compartilhadas;
+conceitos que aparecem em diferentes documentos;
+princípios comuns entre os autores.
+Diferenças
+
+Destaque:
+
+mudanças na forma de explicar o conceito;
+diferentes níveis de profundidade;
+abordagens técnicas ou gerenciais;
+diferenças de terminologia.
+
+Explique por que essas diferenças podem existir quando houver evidências nas fontes.
+
+Estrutura da Resposta
+
+Organize a resposta no seguinte formato:
+
+1. Introdução
+
+Explique a importância desses conceitos dentro da cibersegurança.
+
+2. Análise Individual dos Conceitos
+
+Para cada conceito:
+
+Ameaça
+Definições encontradas nas fontes:
+Fonte 1:
+Fonte 2:
+Fonte 3:
+Pontos em comum:
+Diferenças:
+Exemplos práticos encontrados:
+
+Repita a mesma estrutura para:
+
+Vulnerabilidade
+Risco
+Ataque
+3. Comparação Geral
+
+Crie uma tabela:
+
+Conceito	Como as fontes definem	Principais semelhanças	Principais diferenças
+Ameaça			
+Vulnerabilidade			
+Risco			
+Ataque			
+4. Relação Entre os Conceitos
+
+Explique como os conceitos se conectam em um cenário real de segurança:
+
+Exemplo de estrutura:
+
+Ameaça → Explora → Vulnerabilidade → Realiza um Ataque → Gera Impacto → Representa um Risco
+
+Explique essa relação utilizando exemplos citados nas fontes.
+
+5. Exemplos Práticos
+
+Liste exemplos encontrados nos documentos:
+
+Cenário:
+
+Explique:
+
+Qual é a ameaça?
+Qual vulnerabilidade foi explorada?
+Qual ataque ocorreu?
+Qual risco foi gerado?
+6. Glossário Final
+
+Crie um glossário contendo:
+
+Termo	Definição resumida	Exemplo
+Ameaça		
+Vulnerabilidade		
+Risco		
+Ataque		
+7. Reflexão Final
+
+Finalize respondendo:
+
+Qual conceito aparece com maior destaque nas fontes?
+Qual conceito possui maior diferença de interpretação?
+Por que compreender esses conceitos é importante para profissionais de cibersegurança?
+Como esse conhecimento pode ser aplicado na criação de laboratórios práticos?
+Regras Importantes
+Utilize somente informações presentes nas fontes carregadas.
+Não invente definições que não aparecem nos documentos.
+Sempre indique de qual fonte a informação foi retirada.
+Caso as fontes apresentem divergências, não escolha uma como correta; apenas explique as diferenças.
+Priorize uma explicação clara para estudantes iniciantes em cibersegurança.
 
 ### Aprendizado
 
