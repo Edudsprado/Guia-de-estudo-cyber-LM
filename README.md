@@ -52,14 +52,13 @@ Construir um caderno temático utilizando o NotebookLM para organizar, compreend
 
 Foram selecionadas cinco fontes oficiais e amplamente reconhecidas na área de Segurança da Informação.
 
-| Fonte | Objetivo | Justificativa | | Contribuição para NotebookLM |
-|--------|----------|---------------|
-| OWASP Top 10 | Estudar as principais vulnerabilidades em aplicações web | Principal referência mundial sobre riscos de segurança em aplicações | Permitiu comparar riscos comuns em aplicações web.
-| OWASP Web Security Testing Guide (WSTG) | Compreender metodologias de testes de segurança | Complementa o Top 10 com procedimentos práticos | Forneceu metodologia prática para validação de segurança.
-| NIST Cybersecurity Framework (CSF 2.0) | Estudar boas práticas e governança em segurança | Framework utilizado internacionalmente | Relacionou conceitos técnicos com gestão de segurança.
-| Documentação Oficial do Nmap | Aprender reconhecimento de redes | Referência oficial da ferramenta | Serviu de base para estudos sobre mapeamento de redes.
-| Wireshark User's Guide | Estudar captura e análise de pacotes | Manual oficial para análise de tráfego | Auxiliou na compreensão da análise de pacotes.
-
+| Fonte | Objetivo | Justificativa | Contribuição para NotebookLM |
+|--------|----------|---------------|------------------------------|
+| OWASP Top 10 | Estudar as principais vulnerabilidades em aplicações web | Principal referência mundial sobre riscos de segurança em aplicações | Permitiu comparar riscos comuns em aplicações web. |
+| OWASP Web Security Testing Guide (WSTG) | Compreender metodologias de testes de segurança | Complementa o Top 10 com procedimentos práticos | Forneceu metodologia prática para validação de segurança. |
+| NIST Cybersecurity Framework (CSF 2.0) | Estudar boas práticas e governança em segurança | Framework utilizado internacionalmente | Relacionou conceitos técnicos com gestão de segurança. |
+| Documentação Oficial do Nmap | Aprender reconhecimento de redes | Referência oficial da ferramenta | Serviu de base para estudos sobre mapeamento de redes. |
+| Wireshark User's Guide | Estudar captura e análise de pacotes | Manual oficial para análise de tráfego | Auxiliou na compreensão da análise de pacotes. |
 ---
 
 # 🧠 Estratégia de Aprendizagem
