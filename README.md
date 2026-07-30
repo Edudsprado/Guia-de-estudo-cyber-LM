@@ -224,6 +224,13 @@ A combinação entre curadoria de fontes confiáveis, engenharia de prompts e do
 
 ---
 
+# 🚀 Próximos Passos
+
+- Expandir o caderno com novos frameworks de segurança.
+- Adicionar estudos sobre SIEM e SOC.
+- Comparar respostas do NotebookLM com outros modelos de IA.
+- Atualizar o conteúdo conforme novas versões das fontes oficiais.
+
 # 👨‍💻 Autor
 
 
