@@ -206,6 +206,23 @@ A combinação entre curadoria de fontes confiáveis, engenharia de prompts e do
 
 # 👨‍💻 Autor
 
-**Eduardo Santos**
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/edudsprado" title="Perfil Eduardo">
+        <img src="https://avatars.githubusercontent.com/u/203672299?v=4" width="200px;" alt="Eduardo Prado"/><br>
+        <sub>
+          <b>Eduardo Prado</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+        <sub>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 Projeto desenvolvido para o desafio da **Digital Innovation One (DIO)** com foco na utilização do NotebookLM como ferramenta de aprendizagem ativa em Cibersegurança.
