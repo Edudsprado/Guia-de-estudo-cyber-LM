@@ -217,11 +217,6 @@ A combinação entre curadoria de fontes confiáveis, engenharia de prompts e do
         </sub>
       </a>
     </td>
-    <td align="center">
-        <sub>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
 
