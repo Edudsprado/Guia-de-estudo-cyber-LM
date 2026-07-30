@@ -16,6 +16,21 @@ O tema escolhido foi **Fundamentos de Cibersegurança para Laboratórios Prátic
 
 ---
 
+## 📑 Índice
+
+- Sobre o Projeto
+- Objetivos
+- Curadoria das Fontes
+- Estratégia de Aprendizagem
+- Engenharia de Prompts
+- Cicatrizes (Troubleshooting)
+- Miniguia de Estudos
+- Glossário
+- Prompts Reutilizáveis
+- Lições Aprendidas
+- Considerações Finais
+- Autor
+
 # 🎯 Objetivos
 
 ## Objetivo Geral
