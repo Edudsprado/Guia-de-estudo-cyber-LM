@@ -267,25 +267,165 @@ Priorize uma explicação clara para estudantes iniciantes em cibersegurança.
 
 Adicionar contexto e restringir as fontes gera respostas mais completas e alinhadas ao material estudado.
 
----
+### Resultado
 
-## Exemplo 2
-
-### Prompt Inicial
-
-> Faça um resumo do NIST.
-
-### Problema
-
-Resumo muito superficial.
-
-### Prompt Refinado
-
-> Explique cada uma das funções do NIST Cybersecurity Framework 2.0 e relacione-as com exemplos práticos de um laboratório de segurança.
-
-### Aprendizado
-
-Solicitar aplicações práticas aumenta significativamente a qualidade do conteúdo.
+Este Caderno Temático de Cibersegurança foi estruturado para fornecer uma base sólida a estudantes iniciantes, comparando visões que vão da gestão estratégica de riscos à análise técnica de pacotes.
+1. Introdução
+A compreensão dos conceitos fundamentais de ameaça, vulnerabilidade, risco e ataque é o alicerce da cibersegurança. Sem uma definição clara desses termos, as organizações falham em priorizar defesas e os profissionais técnicos perdem a capacidade de diagnosticar problemas com precisão. Enquanto frameworks de governança utilizam esses conceitos para gerir o impacto no negócio
+, ferramentas de análise os aplicam para identificar falhas técnicas e comportamentos anômalos no tráfego de rede
+.
+2. Análise Individual dos CONCEITOS
+Ameaça (Threat)
+Definições encontradas nas fontes:
+Fonte 1 (NIST): Enfocada na gestão estratégica, cita especificamente eventos de ransomware como ameaças que devem ser geridas e mitigadas de forma proativa
+.
+Fonte 2 (Wireshark): Aborda ameaças como comportamentos "estranhos" ou anomalias de segurança na rede que o analista deve investigar para entender o que realmente está acontecendo
+.
+Fonte 3 (OWASP): Foca em ameaças direcionadas à camada de aplicação web que buscam explorar riscos críticos de segurança
+.
+Pontos em comum: Todas as fontes tratam a ameaça como um agente ou evento externo/interno com potencial para causar danos ou instabilidade ao ambiente
+.
+Diferenças: O NIST aborda a ameaça sob a ótica de gestão e governança
+, enquanto o Wireshark a visualiza como uma métrica técnica de tráfego (ex: pacotes malformados)
+.
+Exemplos práticos encontrados: Eventos de ransomware
+, tráfego de negação de serviço (DDoS) baseado em DNS
+ e comandos de controle ou tunelamento
+.
+Vulnerabilidade (Vulnerability)
+Definições encontradas nas fontes:
+Fonte 1 (Nmap): Identifica vulnerabilidades técnicas através da exposição de portas abertas, serviços desatualizados e versões de sistemas operacionais vulneráveis
+.
+Fonte 2 (OWASP WSTG): Define vulnerabilidades como "fraquezas" específicas no código ou na configuração de aplicações web, categorizando-as em cenários de teste
+.
+Fonte 3 (Wireshark): Visualiza vulnerabilidades como violações de especificações de protocolo ou erros de implementação que causam pacotes malformados
+.
+Pontos em comum: A vulnerabilidade é invariavelmente vista como uma fraqueza interna ou falha de configuração que pode ser explorada
+.
+Diferenças: O Nmap foca na vulnerabilidade da infraestrutura de rede (portas/serviços)
+, enquanto a OWASP foca na lógica de aplicação e código-fonte
+.
+Exemplos práticos encontrados: Porta 22/tcp aberta com software desatualizado
+, falhas de injeção em sites web
+ e erros de soma de verificação (checksum) inválidos
+.
+Risco (Risk)
+Definições encontradas nas fontes:
+Fonte 1 (NIST): O framework é desenhado para "entender e melhorar a gestão de risco de cibersegurança", traduzindo objetivos estratégicos em ações práticas de mitigação
+.
+Fonte 2 (OWASP Top 10): Define risco pela criticidade do impacto negativo que uma vulnerabilidade web pode causar na cultura de desenvolvimento e no software
+.
+Fonte 3 (Wireshark): O risco técnico é medido pela severidade das anomalias encontradas no tráfego através do recurso Expert Info (severidades: Chat, Note, Warn, Error)
+.
+Pontos em comum: O risco é tratado como a medida de probabilidade e impacto de um evento negativo
+.
+Diferenças: O NIST adota uma abordagem de risco organizacional
+, enquanto o Wireshark adota uma abordagem de risco operacional/técnico imediato
+.
+Exemplos práticos encontrados: Adoção do OWASP Top 10 como primeiro passo para mitigar riscos
+ e identificação de erros sérios de protocolo (nível Error)
+.
+Ataque (Attack)
+Definições encontradas nas fontes:
+Fonte 1 (OWASP WSTG): Fornece uma estrutura de "melhores práticas" para que testadores de invasão (penetration testers) realizem ataques controlados para validar a segurança
+.
+Fonte 2 (Nmap): Frequentemente utilizado na fase de reconhecimento de um ataque para auditar firewalls e filtros de pacotes
+.
+Fonte 3 (Wireshark): Não detecta o ataque ativamente (não é um IDS), mas permite medir e analisar os efeitos do ataque "no cabo"
+.
+Pontos em comum: O ataque é a execução da exploração contra um alvo
+.
+Diferenças: O WSTG foca na metodologia do ataque para testes
+, enquanto o Wireshark foca na medição do impacto e análise forense pós-evento
+.
+Exemplos práticos encontrados: Auditoria de segurança contra hosts individuais
+, testes de coleta de informações (WSTG-INFO-02)
+ e análise de fluxos TCP suspeitos
+.
+3. Comparação Geral
+Conceito
+Como as fontes definem
+Principais semelhanças
+Principais diferenças
+Ameaça
+Agente externo ou evento (ex: Ransomware)
+.
+Potencial de dano.
+NIST (Gestão) vs. Wireshark (Tráfego técnico)
+.
+Vulnerabilidade
+Fraquezas técnicas (portas)
+ ou lógicas (web)
+.
+É uma falha interna.
+Nmap (Rede/OS)
+ vs. OWASP (Aplicação)
+.
+Risco
+Gestão organizacional
+ ou criticidade de falhas
+.
+Foco no impacto e perda.
+NIST (Negócio) vs. Wireshark (Severidade técnica)
+.
+Ataque
+Execução de exploração/testes
+ ou reconhecimento
+.
+Exploração ativa da falha.
+WSTG (Metodologia)
+ vs. Wireshark (Medição passiva)
+.
+4. Relação Entre os Conceitos
+Em um cenário real, os conceitos se conectam de forma cíclica: Ameaça (ex: Atacante externo) → Explora → Vulnerabilidade (ex: Porta SSH aberta identificada pelo Nmap
+) → Realiza um Ataque (ex: Brute force simulado via guia WSTG
+) → Gera Impacto (ex: Retransmissões e anomalias capturadas pelo Wireshark
+) → Representa um Risco (ex: Comprometimento de dados gerido pelo framework NIST
+).
+5. Exemplos Práticos
+Cenário: Investigação de Saúde de Serviço DNS
+Ameaça: Volume anormal de respostas DNS significativamente maiores que as requisições
+.
+Vulnerabilidade: Configuração inadequada do servidor DNS que permite amplificação ou não valida consultas
+.
+Ataque: Ataque de Negação de Serviço Distribuída (DDoS) baseado em DNS ou Tunelamento DNS para Comando e Controle
+.
+Risco: Indisponibilidade do serviço ou exfiltração de dados (PII), gerando alto nível de severidade no Expert Info do Wireshark
+.
+6. Glossário Final
+Termo
+Definição resumida
+Exemplo
+Ameaça
+Agente ou evento com potencial de causar dano
+.
+Ransomware
+.
+Vulnerabilidade
+Fraqueza interna técnica ou lógica no sistema
+.
+Porta aberta ou software obsoleto
+.
+Risco
+Probabilidade de perda ou impacto negativo gerido pela organização
+.
+Criticidade nível "Error" em protocolos
+.
+Ataque
+Ação de explorar vulnerabilidades para atingir um objetivo
+.
+Teste de Invasão (Pentest)
+.
+7. Reflexão Final
+Conceito com maior destaque: O Risco aparece com maior ênfase, pois tanto o NIST CSF 2.0 quanto o OWASP Top 10 são estruturados inteiramente em torno da melhoria da gestão e priorização de riscos
+.
+Maior diferença de interpretação: A Vulnerabilidade. Para o Nmap, ela é uma porta aberta ou um serviço visível
+; para a OWASP, é uma falha na lógica do código web
+; para o Wireshark, é um erro de conformidade de protocolo (pacote malformado)
+.
+Importância para profissionais: Compreender esses conceitos permite que o analista fale a linguagem da gestão (NIST) enquanto executa a validação técnica (WSTG/Nmap) e diagnósticos precisos (Wireshark)
+.
+Aplicação em laboratórios: Esse conhecimento permite montar laboratórios que não apenas "rodam ferramentas", mas que simulam o ciclo completo: configurar uma vulnerabilidade (OWASP), descobrir o alvo (Nmap), realizar o ataque (WSTG) e medir o resultado (Wireshark) sob uma governança de riscos (NIST)
 
 ---
 
